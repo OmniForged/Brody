@@ -89,5 +89,3 @@ Brody will become the control center of digital productivity: the layer where al
 ## Contact
 
 **G Prajyoth (Eminence)** – Founder & Technical Lead ([prajyothnani123@gmail.com](mailto:prajyothnani123@gmail.com))
-
-**Team:** B Sai Vishal, S Neeraj, G Nikhil
