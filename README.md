@@ -1,36 +1,53 @@
 # Brody
 
-Brody is a proactive multi-agent AI productivity assistant that unifies your schedule across Gmail, Calendar, and Microsoft To Do—and prepares you for every meeting automatically. With one click, Brody delivers prioritized daily digests, meeting briefs, key decisions, supporting documents, and draft communications before you even ask.
+**Your Proactive Productivity Assistant.**
 
-## Features
+Brody helps you regain control of your day by unifying your schedule, anticipating your needs, and handling the prep work for you.
 
-- Cross-app calendar/task aggregation
-- Proactive meeting prep engine: summaries, decisions, supporting docs, agenda, draft emails
-- Lightweight orchestrator (LangGraph agent flows)
-- High-quality LLM summarization (Gemini API)
-- Audit trail & “why this suggestion” justification
+## New Architecture (MVP Rebuild)
 
-## How It Works
+As of January 2026, the project has been rebuilt for scale and performance:
 
-1. Aggregates events, tasks, and emails from connected apps
-2. Filters and prioritizes your day using smart rules
-3. Generates meeting briefs and draft emails with supporting context
-4. Presents a digest for review, approval, and feedback
-
-## Tech Stack
-
-- Backend: FastAPI, LangGraph
-- LLM: Gemini API (student credits), Ollama fallback
-- Frontend: React
-
-## Vision
-
-Brody aims to make knowledge workers 3–7 hours/week more effective by eliminating context-switching and making every meeting high-impact.
+- **`backend/`**: FastAPI implementation with LangGraph orchestration.
+- **`frontend/`**: React + Vite + Tailwind CSS dashboard.
+- **`_archive/`**: Legacy prototype code.
 
 ## Getting Started
 
-Coming soon: Quickstart guide and API documentation.
+### Prerequisites
+- Python 3.10+
+- Node.js 18+
+
+### 1. Backend Setup
+```bash
+cd backend
+python -m venv venv
+# Windows:
+venv\Scripts\activate
+# Mac/Linux:
+# source venv/bin/activate
+
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8000
+```
+API Documentation available at: [http://localhost:8000/docs](http://localhost:8000/docs)
+
+### 2. Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+```
+Access the dashboard at: [http://localhost:5173](http://localhost:5173)
+
+### 3. Usage
+- Go to the Frontend Dashboard.
+- Click **"Prepare My Day"**.
+- View your AI-generated meeting briefs.
+
+## Configuration
+- **Backend**: Rename `backend/.env.example` (if exists) or create `.env` with `GOOGLE_API_KEY=your_key_here` for real AI generation.
+- **Frontend**: API URL is currently hardcoded to `localhost:8000` for MVP.
 
 ---
-
-For more details, see [Brody_MVP.md](Brody_MVP.md) and [Brody_Plan.md](Brody_Plan.md).
+For more details, see [walkthrough.md](file:///C:/Users/prajy/.gemini/antigravity/brain/869b0ae7-869a-4f1a-accd-9130172542a4/walkthrough.md) in the artifacts folder.
