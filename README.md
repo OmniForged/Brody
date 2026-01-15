@@ -135,9 +135,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Team
 
 - **G Prajyoth (Eminence)** - Founder & Technical Lead
-- **B Sai Vishal** - Developer
-- **S Neeraj** - Developer
-- **G Nikhil** - Developer
 
 ## 🌟 Acknowledgments
 
